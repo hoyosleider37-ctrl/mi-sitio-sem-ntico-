@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo Semántica y Accesible</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal (Semántico y Accesible) -->
+    <header class="main-header">
+        <div class="header-container">
+            <span class="logo" aria-label="Logotipo MyLogo">MyLogo</span>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+
+        <!-- Sección de Artículos -->
+        <section class="articles-section" aria-label="Artículos recientes">
+            <article class="card">
+                <img src="https://placeholder.com" alt="Marcador de posición gris de 80 por 80 píxeles" width="80" height="80">
+                <h2>Article Title</h2>
+                <p>Article content goes here. This is a sample article content.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://placeholder.com" alt="Marcador de posición gris de 80 por 80 píxeles" width="80" height="80">
+                <h2>Article Title</h2>
+                <p>Article content goes here. This is a sample article content.</p>
+            </article>
+        </section>
+
+        <!-- Sección del Formulario -->
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Sección de la Tabla -->
+        <section class="table-section">
+            <h2>Student Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>170</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>85</td>
+                        <td>95</td>
+                        <td>180</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3">Total</th>
+                        <td>350</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
